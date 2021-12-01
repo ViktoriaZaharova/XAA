@@ -1,0 +1,846 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+//*::-webkit-input-placeholder
+//  color: #666
+//  opacity: 1
+//
+//*:-moz-placeholder
+//  color: #666
+//  opacity: 1
+//
+//*::-moz-placeholder
+//  color: #666
+//  opacity: 1
+//
+//*:-ms-input-placeholder
+//  color: #666
+//  opacity: 1
+//
+//body input:focus:required:invalid,
+//body textarea:focus:required:invalid
+//  color: #666
+//
+//body input:required:valid,
+//body textarea:required:valid
+//  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 15px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  background: #fff
+  color: #373737
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0
+  box-sizing: border-box
+  width: 100%
+  font-family: $default-font
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+label
+  display: block
+  width: 100%
+
+.btn, button
+  outline: none
+  border: none
+    radius: 0
+  box-shadow: none
+  padding: 0
+  margin: 0
+  font-family: $default-font
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn
+  border-radius: 120px
+  font-size: 15px
+  font-weight: bold
+  padding: 8px 23px
+  height: 50px
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  width: fit-content
+
+.btn-accent
+  color: #fff
+  background: linear-gradient(90.55deg, #0CBACD 15.28%, #08DBBA 110.69%)
+
+  &:hover
+    background: linear-gradient(-90.55deg, #0CBACD 15.28%, #08DBBA 110.69%)
+    color: #fff
+
+.btn-border
+  border: 1px solid #0CBACD
+  color: $accent
+
+  &:hover
+    background: $accent
+    color: #fff
+
+.btn-load
+  max-width: 282px
+  width: 100%
+  margin: 0 auto
+  .btn-icon
+    width: 15px
+    height: 8px
+    fill: $accent
+    margin: 0 0 0 15px
+    display: flex
+    align-items: center
+    justify-content: center
+  &:hover
+    .btn-icon
+      fill: #fff
+
+.box-text
+  font-size: 15px
+  line-height: 30px
+
+.svg-icon
+  display: inline-block
+  width: 100%
+  height: 100%
+
+.color-accent
+  color: $accent
+
+.d-inline
+  display: inline-block
+
+.container
+  max-width: 1200px
+  padding: 0 10px
+
+.row
+  margin: 0 -10px
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto
+  padding: 0 10px
+
+.wrapper
+  padding: 123px 0 0
+
+h1
+  font-size: 144px
+  font-family: $font
+  color: $accent
+  line-height: 208px
+  width: 100%
+
+h2
+  width: 100%
+  font-size: 35px
+  font-weight: bold
+  color: $accent
+  margin: 0 0 35px
+
+h3
+  font-weight: bold
+  font-size: 25px
+  width: 100%
+  color: #000
+  margin: 0 0 20px
+
+.mb-24
+  margin-bottom: 24px
+
+.mb-40
+  margin-bottom: 40px
+
+.mb-35
+  margin-bottom: 50px
+
+.links-details
+  display: flex
+  align-items: center
+  font-size: 13px
+  font-weight: 500
+
+  .svg-icon
+    width: 75px
+    height: 16px
+    fill: $accent
+    margin: 0 0 0 18px
+    transition: .3s ease
+
+  &:hover
+    color: $hover
+
+    .svg-icon
+      fill: $hover
+
+.btn-group
+  width: 100%
+  flex-wrap: wrap
+
+  .btn
+    width: 100%
+    margin: 0 0 19px
+    border-radius: 120px
+
+    &:last-child
+      margin: 0
+
+.btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:not(:first-child)
+  border-radius: 120px
+
+//header
+header
+  padding: 23px 0 24px
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  background: #fff
+  z-index: 3
+
+  .btn
+    height: 41px
+
+.logo
+  display: flex
+  align-items: center
+  max-width: 191px
+
+.address
+  color: #727272
+  margin: 0 auto 0 0
+
+.header-box
+  display: flex
+  align-items: center
+  margin: 0 20px 0 0
+
+.schedule
+  color: #727272
+  margin: 0 20px 0 0
+
+.phone
+  font-size: 18px
+  font-weight: bold
+  color: $accent
+
+  &:hover
+    color: $text
+
+.header-row
+  width: 100%
+  display: flex
+  align-items: center
+
+
+.menu
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  font-size: 15px
+  margin: 11px 0 0
+
+  li
+    a
+      color: $text
+
+      &:hover
+        color: $accent
+
+.btn-scroll-top
+  width: 49px
+  height: 49px
+  position: fixed
+  z-index: 7
+  background: $footer
+  fill: #fff
+  border-radius: 50%
+  bottom: 360px
+  right: 210px
+  display: flex
+  align-items: center
+  justify-content: center
+
+  &:hover
+    background: $accent
+
+  .svg-icon
+    width: 18px
+    height: 10px
+
+.btn-burger
+  max-width: 28px
+  width: 100%
+  display: none
+
+  span
+    display: block
+    width: 100%
+    margin: 0 0 6px
+    background: $accent
+    border-radius: 5px
+    height: 2px
+
+    &:last-child
+      margin: 0
+
+.mobile-menu
+  display: none
+  position: fixed
+  z-index: 10
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background: linear-gradient(0deg, rgba(29, 42, 61, 0.61), rgba(29, 42, 61, 0.61)), #FFFFFF
+
+  &__body
+    height: 100%
+    overflow-y: auto
+    background: #fff
+    width: calc(100% - 79px)
+    padding: 19px 24px 29px
+
+  .logo
+    margin: 0 0 10px
+    max-width: 103px
+
+.btn-close-menu
+  position: absolute
+  top: 14px
+  right: 23px
+  z-index: 2
+  cursor: pointer
+  width: 21px
+  height: 22px
+  display: flex
+  align-items: center
+  justify-content: center
+  fill: #fff
+
+//main
+.main
+  .btn
+    margin: 57px 0 0
+
+.main-img
+  position: relative
+  z-index: 1
+  max-width: 596px
+  width: 100%
+  display: flex
+  align-items: center
+  margin: 0 0 0 auto
+
+  img
+    width: 100%
+    margin: -10px 0 0
+
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    transform: translate(-50%, 0)
+    top: 25px
+    border-radius: 50%
+    background: #EFEFEF
+    width: 440px
+    height: 440px
+    z-index: -1
+
+
+//services
+.bg-decor
+  position: relative
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 747px
+    background: url("../img/decor-bg1.svg") no-repeat center
+      size: cover
+
+.popular-services
+  padding: 0 0 54px
+
+  h2
+    margin: 47px 0 42px
+
+.services-box
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  width: 100%
+  height: 100%
+  background: #fff
+  box-shadow: 0px 8px 60px rgba(217, 234, 239, 0.9)
+  border-radius: 10px
+  padding: 39px 42px 35px 18px
+
+  &__icon
+    max-width: 165px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
+  &__body
+    width: calc(100% - 165px)
+    padding: 0 0 0 20px
+
+  .links-details
+    margin: 30px 0 0
+
+
+//about-doctor
+.about-doctor
+  padding: 36px 0
+
+  &__photo
+    width: 100%
+    max-width: 380px
+    display: flex
+    align-items: center
+    margin: 0 0 23px
+
+  &__content
+    width: 100%
+    padding: 0 0 0 44px
+
+.nav-tabs
+  width: 100%
+  margin: 32px 0 0
+  border: none
+
+  .nav-item
+    flex: 1
+    text-align: center
+    overflow: hidden
+    border: 1px solid #1AB9CA
+    background: #fff
+    margin: 0 -1px 0 0
+
+    &:last-child
+      margin: 0
+      border-radius: 0px 10px 10px 0px
+
+    &:first-child
+      border-radius: 10px 0px 0px 10px
+
+  .nav-link
+    margin: 0
+    padding: 16px 10px
+    color: $accent
+    font-size: 15px
+    font-weight: bold
+    border: none
+      radius: 0
+
+  .nav-link.active
+    background: $accent
+    color: #fff
+
+.tab-content
+  box-shadow: 0px 8px 60px rgba(217, 234, 239, 0.9)
+  border-radius: 10px
+  background: #fff
+  padding: 54px 47px 70px 58px
+  margin: -14px 0 0
+  z-index: -1
+
+//statistics
+.statistics
+  padding: 54px 0
+
+.statistics-box
+  margin: 0 0 40px
+  padding: 0 20px 0 0
+
+  &__num
+    font-size: 45px
+    font-weight: bold
+    color: #000
+    margin: 0 0 16px
+    padding: 0 0 13px
+    line-height: 55px
+    position: relative
+
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      height: 2px
+      width: 77px
+      background: $accent
+
+.statistics-wrapper
+  margin: 46px 0 0
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+//advantages
+.advantages
+  padding: 0 0 50px
+
+  h2
+    margin: 0 0 15px
+
+.advantages-box
+  color: #000
+  width: 100%
+  height: 100%
+  background: #fff
+  border-radius: 10px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  box-shadow: 0 8px 60px rgba(217, 234, 239, 0.9)
+  padding: 35px 30px 40px 32px
+  &__icon
+    width: 45px
+    display: flex
+    align-items: center
+    justify-content: center
+
+  &__body
+    width: calc(100% - 45px)
+    padding: 0 0 0 27px
+
+//certification
+.certification
+  position: relative
+  z-index: 1
+  color: #fff
+  padding: 44px 0
+  h2
+    color: #fff
+    margin: 0 0 20px
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 426px
+    background: $accent
+    left: 0
+    top: 0
+
+.slick-slider
+  width: 100%
+
+.slick-arrow
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #fff
+  border-radius: 50%
+  width: 54px
+  height: 54px
+  box-shadow: 0px 8px 60px rgba(217, 234, 239, 0.9)
+  fill: $accent
+  opacity: 1
+  z-index: 1
+  cursor: pointer
+  transition: .3s ease
+  &:hover
+    background: $hover
+  .svg-icon
+    width: 12px
+    height: 22px
+
+.slider-nav
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  .slick-prev
+    margin: 0 29px 0 0
+
+.certification-slider
+  margin: 40px -10px 0
+
+.certification-box
+  width: 100%
+  padding: 0 10px
+  display: flex
+  align-items: center
+
+//examples-operation
+.examples-operation
+  padding: 56px 0
+  h2
+    margin: 0 auto 20px
+
+.examples-operation-col
+  display: none
+  &:nth-child(-n+4)
+    display: block
+
+.examples-operation-box
+  width: 100%
+  height: 100%
+  &__img
+    width: 100%
+    height: 203px
+    display: flex
+    align-items: center
+    justify-content: center
+    background: #C4C4C4
+  &__body
+    height: calc(100% - 203px)
+    width: 100%
+    padding: 18px 0 0
+    display: flex
+    flex-direction: column
+  .box-text
+    margin: 0 0 15px
+  h3
+    margin: 0 0 13px
+    font-size: 15px
+  .links-details
+    margin: auto 0 0
+
+//.gallery-wrapper
+.gallery-wrapper
+  width: 100%
+  &__img
+    width: 100%
+
+//materials
+.materials
+  padding: 75px 0 87px
+  h2
+    margin: 0 0 20px
+
+.materials-slider
+  margin: 40px 0 0
+
+.materials-box
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 60px
+  max-width: 280px
+  img
+    max-height: 100%
+
+//reviews
+.reviews
+  padding: 0 0 54px
+  &:before
+    bottom: auto
+    top: 0
+    background: url("../img/decor-bg2.svg") no-repeat center top
+      size: 100%
+  h2
+    margin: 0 auto 20px
+
+.reviews-slider
+  margin: 34px 0 0
+  .slick-current + .slick-slide
+    .reviews-box
+      margin: 0 0 58px auto
+
+.reviews-box
+  max-width: 550px
+  width: 100%
+  background: #fff
+  box-shadow: 0px 8px 60px rgba(217, 234, 239, 0.9)
+  border-radius: 10px
+  padding: 32px 27px 35px 57px
+  margin: 0 0 58px
+  &__photo
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    width: 68px
+    height: 68px
+    min-width: 68px
+    border-radius: 50%
+    margin: 0 20px 0 0
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__head
+    width: 100%
+    display: flex
+    align-items: center
+    margin: 0 0 10px
+    min-height: 68px
+    &-wrapper
+      width: 100%
+      display: flex
+      align-items: flex-start
+  h3
+    font-size: 18px
+    margin: 0 0 10px
+  .list-rating
+    margin: 0 0 0 auto
+
+.name-operation
+  font-size: 13px
+
+.list-rating
+  display: flex
+  align-items: center
+  li
+    margin: 0 11px 0 0
+    width: 18px
+    height: 18px
+    display: flex
+    align-items: center
+    justify-content: center
+    &:last-child
+      margin: 0
+  .svg-icon
+    fill: $yellow
+  .star0
+    fill: none
+    stroke: $yellow
+
+.btn-add-reviews
+  width: 100%
+
+.average-rating
+  display: flex
+  align-items: center
+  margin: 0 0 10px
+  .list-rating
+    margin: 0 0 0 18px
+  p
+    font-weight: bold
+
+//social-network
+.social-network
+  padding: 65px 0
+  h2
+    margin: 0 auto 20px
+  .box-text
+    margin: 0 auto 30px
+
+.social-network-box
+  background: #C4C4C4
+  width: 100%
+  height: 180px
+  margin: 0 0 20px
+  display: flex
+  align-items: center
+  justify-content: center
+
+
+.social-network-box-max
+  height: 380px
+
+.subscribe-wrapper
+  padding: 20px 20px 0
+  &__item
+    display: flex
+    align-items: center
+    .box-text
+      margin: 0 0 0 23px
+      max-width: 163px
+      width: 100%
+  .btn
+    margin: 27px 0 0
+    max-width: 243px
+    width: 100%
+
+//map
+.map
+  width: 100%
+  height: 336px
+
+  iframe
+    width: 100%
+    height: 100%
+
+//footer
+footer
+  background: $footer
+  color: #fff
+
+
+@import "media"
+// Всегда в конце
