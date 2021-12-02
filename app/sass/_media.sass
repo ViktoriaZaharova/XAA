@@ -3,53 +3,506 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
-
+@media only screen and (max-width: 1200px)
+  .btn-scroll-top
+    right: 20px
+    bottom: 300px
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width: 992px)
+  .footer-box
+    margin: 0 0 25px
 
+  .payments
+    justify-content: flex-start
+    margin: 10px 0 0
+
+
+  footer
+    padding: 50px 0 86px
+
+  .recommended-articles
+    padding: 79px 0 56px
+
+  .appointment
+    padding: 16px 20px 4px
+
+  .btn-scroll-top
+    bottom: 20px
+
+  .reviews-box
+    padding: 30px 20px 24px
+    width: calc(50% - 10px)
+
+  .ratings-wrapper
+    margin: 0 0 16px
+
+  .btn-add-reviews
+    margin: 27px 0 0
+    max-width: 327px
+
+  .reviews:before
+    width: 1608px
+    left: 50%
+    transform: translate(-50%,0)
+
+  .about-doctor__content
+    padding: 0
+
+  .popular-services
+    &:before
+      width: 1608px
+      left: -424px
+      bottom: 144px
+
+  .main-img
+    max-width: 410px
+    margin: 40px auto 0
+    &:before
+      width: 302px
+      height: 302px
+      top: 17px
+    img
+      margin: 0 auto
+
+  h1
+    font-size: 100px
+    line-height: 144px
+
+  .main
+    .btn
+      margin: 31px 0 0
+
+  .header-box
+    flex-direction: column
+    align-items: flex-start
+    font-size: 11px
+
+  .schedule
+    margin: 0
+    order: 1
+
+
+  .phone
+    color: #373737
+    font-size: 14px
+
+  header
+    padding: 16px 0
+    .menu
+      font-size: 13px
+
+  .menu-catalog
+    top: 100px
+
+  .wrapper
+    padding: 103px 0 0
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+@media only screen and (max-width: 890px)
+  .reviews-box .list-rating
+    width: 100%
+    margin: 22px 0 0
+
+  .reviews-box__head
+    flex-wrap: wrap
+    min-height: auto
+    margin: 0 0 20px
+
+  .reviews-box__photo
+    width: 63px
+    height: 63px
+    min-width: 63px
+
+  .reviews
+    padding: 0
+
+  .materials-slider__wrapper
+    justify-content: space-around
+
+
+
+@media only screen and (max-width: 768px)
+  .footer-menu
+    margin: 0 0 25px
+
+  .footer-box
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    .mail
+      width: 100%
+    .schedule
+      width: 100%
+    .address
+      max-width: 280px
+
+  .list-social
+    margin: 0 0 0 auto
+
+  h2
+    font-size: 30px
+    margin: 0 0 25px
+
+  .appointment-body
+    padding: 0 0 0 30px
+
+  .form-appointment
+    label
+      width: calc(100% - 200px)
+    button
+      margin: 0
+
+  .recommended-articles-box
+    height: auto
+
+  .container
+    padding: 0 12px
+
+  .recommended-articles-slider
+    margin: 38px 0 53px
+    .slick-arrow
+      position: absolute
+      z-index: 1
+      top: 54px
+    .slick-prev
+      left: 0
+    .slick-next
+      right: 0
+
+  .recommended-articles-box
+    width: 100%
+    &__body
+      padding: 14px 25px 29px
+    .box-text
+      margin: 0 0 24px
+
+  .clinic-tour
+    padding: 56px 0 69px
+    h2
+      margin: 0 0 25px
+    .icon-arrow
+      margin: 36px 0 0
+
+  .tour-box
+    margin: 40px 0 0
+    height: 250px
+
+  .card-header
+    padding: 25px 0 20px
+    h4
+      padding: 0 28px 0 0
+      font-size: 15px
+
+
+  .card-header__icon
+    width: 26px
+    height: 26px
+    min-width: 26px
+    padding: 5px
+
+  .card-body
+    padding: 0 0 20px
+
+  .social-network-box
+    height: 328px
+    width: 328px
+    margin: 0 5px
+
+
+  .social-network-slider
+    width: calc(100% + 24px)
+    margin: 0 -12px
+    .slick-arrow
+      position: absolute
+      top: 50%
+      transform: translate(0,-50%)
+    .slick-prev
+      left: 24px
+    .slick-next
+      right: 24px
+
+  .social-network
+    padding: 50px 0 60px
+    h2
+      text-align: left
+    .box-text
+      margin: 0 0 15px
+      text-align: left
+
+  .subscribe-wrapper
+    padding: 17px 0 0
+    .box-text
+      margin: 0 0 0 23px
+    .btn
+      max-width: 327px
+      width: 100%
+
+  .reviews-box
+    width: 100%
+    margin: 0 auto 22px
+    max-width: none
+    &:last-child
+      margin: 0 auto
+
+  .reviews-slider
+    margin: 24px 0 0
+    .slick-arrow
+      top: 50%
+      position: absolute
+      transform: translate(0,-50%)
+    .slick-prev
+      left: 0
+    .slick-next
+      right: 0
+
+  .reviews
+    h2
+      margin: 0 0 28px
+      text-align: left
+    .box-text
+      text-align: left
+
+  .materials-slider
+    margin: 25px 0 0
+    .slick-arrow
+      top: 50%
+      position: absolute
+      transform: translate(0,-50%)
+    .slick-prev
+      left: 0
+    .slick-next
+      right: 0
+
+  .materials-slider__wrapper
+    flex-direction: column
+    align-items: center
+    padding: 0
+
+  .materials-box
+    max-width: 200px
+    margin: 0 auto 32px
+    &:last-child
+      margin: 0 auto
+
+  .materials
+    padding: 60px 0 70px
+
+  .gallery-wrapper
+    height: 335px
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  .examples-operation
+    padding: 80px 0 60px
+
+  .certification-slider
+    margin: 56px 0 0
+    .slick-arrow
+      top: 50%
+      position: absolute
+      transform: translate(0,-50%)
+    .slick-prev
+      left: 10px
+    .slick-next
+      right: 10px
+
+  .certification
+    padding: 44px 0 0
+
+  .statistics
+    padding: 64px 0 25px
+
+  .statistics-box
+    margin: 0 0 25px
+
+  .statistics-wrapper
+    justify-content: flex-start
+
+  .advantages
+    padding: 0 0 40px
+    .mb-40
+      margin-bottom: 25px
+
+  .advantages-box
+    min-height: 132px
+    br
+      display: none
+
+  .about-doctor
+    padding: 0
+
+  .nav-tabs
+    margin: 16px 0 0
+
+  .about-doctor__photo
+    max-width: 328px
+    margin: 35px auto 26px
+    height: 330px
+    overflow: hidden
+    align-items: flex-start
+
+  .tab-content
+    padding: 27px 20px 23px
+    h3
+      font-size: 18px
+      margin: 0 0 10px
+
+  .popular-services
+    padding: 0 0 40px
+    h2
+      margin: 0 0 20px
+
+  header
+    .address
+      display: none
+    .menu
+      display: none
+    .btn
+      display: none
+
+  .btn-burger
+    display: block
+
+  .header-box
+    margin: 0 28px 0 auto
+
+
+  .wrapper
+    padding: 100px 0 0
+
+  header.fixed
+    .header-box
+      display: flex
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+@media only screen and (max-width: 576px)
+  .footer-menu
+    column-count: 2
+
+  .list-pay
+    li
+      margin: 0 0 0 22px
+
+  .appointment-icon
+    display: none
+
+  .appointment-body
+    width: 100%
+    padding: 0
+
+  .appointment
+    padding: 50px 25px
+    h3
+      margin: 0 0 37px
+      font-size: 30px
+
+  .checkbox
+    margin: 34px 0 0
+
+  .form-appointment
+    flex-direction: column
+    align-items: center
+    label
+      width: 100%
+    button
+      max-width: none
+      width: 100%
+      margin: 28px auto 0
+
+  .btn-scroll-top
+    display: none
+
+  .recommended-articles-box
+    h3
+      font-size: 18px
+      margin: 0 0 10px
+
+  .tour-box
+    height: 179px
+    p
+      font-size: 24px
+
+  .mb-35
+    margin-bottom: 20px
+
+  .examples-operation-col
+    display: none
+    &:nth-child(-n+4)
+      display: none
+    &:nth-child(-n+2)
+      display: block
+
+  .mb-40
+    margin-bottom: 30px
+
+  .examples-operation
+    h2
+      text-align: left
+    .box-text
+      text-align: left
+
+  .certification-box
+    max-width: 277px
+    margin: 0 auto
+    padding: 0
+
+  .statistics-box
+    width: 50%
+    flex: auto
+
+  .statistics-wrapper
+    margin: 11px 0 0
+
+  .services-box
+    padding: 37px 20px 22px 24px
+    align-items: flex-start
+    &__icon
+      max-width: 62px
+    &__body
+      width: calc(100% - 62px)
+      padding: 0 0 0 22px
+    h3
+      font-size: 18px
+      margin: 0 0 14px
+    .links-details
+      margin: 10px 0 0
+
+  header
+    .logo
+      max-width: 109px
+
+  .wrapper
+    padding: 71px 0 0
+
+  header.fixed
+    padding: 11px 0 12px
+
+@media only screen and (max-width: 480px)
+
+  .about-doctor
+    .nav-tabs
+      .nav-item
+        border-radius: 10px
+        overflow: hidden
+        display: none
+        &:first-child
+          display: block
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width: 420px)
+  .footer-box
+    .mail
+      width: 100%
 
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
-
+@media only screen and (max-width: 370px)
+  .header-box
+    margin: 0 10px 0 0
+    font-size: 10px

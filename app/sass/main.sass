@@ -97,18 +97,63 @@ input, textarea, select
   outline: none
   box-shadow: none
   appearance: none
-  padding: 0
+  padding: 0 0 20px
   box-sizing: border-box
   width: 100%
+  font-size: 15px
+  color: #000
   font-family: $default-font
-
+  border: none
+    radius: 0
+    bottom: 1px solid #1AB9CA
+  &::placeholder
+    color: #A0A0A0
   &:hover, &:focus
     outline: none
     box-shadow: none
 
+textarea
+  border: 1px solid #1AB9CA
+  padding: 12px 28px
+  height: 130px
+
 label
   display: block
   width: 100%
+
+.checkbox
+  width: 100%
+  display: flex
+  align-items: flex-start
+  color: #A0A0A0
+  font-size: 13px
+  margin: 26px 0 0
+  cursor: pointer
+
+.inp-check
+  display: none
+
+.checkbox-custom
+  border: 1px solid #A0A0A0
+    radius: 50px
+  position: relative
+  width: 18px
+  height: 18px
+  min-width: 18px
+  margin: 3px 10px 0 0
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    border-radius: 50%
+    width: 10px
+    height: 10px
+
+.inp-check:checked + .checkbox-custom
+  &:before
+    background: $accent
 
 .btn, button
   outline: none
@@ -179,6 +224,14 @@ label
 .color-accent
   color: $accent
 
+a.color-accent
+  &:hover
+    color: $hover
+
+.bg-accent
+  background: $accent
+  color: #fff
+
 .d-inline
   display: inline-block
 
@@ -193,7 +246,7 @@ label
   padding: 0 10px
 
 .wrapper
-  padding: 123px 0 0
+  padding: 118px 0 0
 
 h1
   font-size: 144px
@@ -223,7 +276,10 @@ h3
   margin-bottom: 40px
 
 .mb-35
-  margin-bottom: 50px
+  margin-bottom: 35px
+
+.p-90
+  padding: 90px 0
 
 .links-details
   display: flex
@@ -259,6 +315,13 @@ h3
 .btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:not(:first-child)
   border-radius: 120px
 
+.links-grey
+  color: #B3B3B3
+  font-size: 13px
+  text-decoration: underline
+  &:hover
+    color: $accent
+
 //header
 header
   padding: 23px 0 24px
@@ -271,6 +334,14 @@ header
 
   .btn
     height: 41px
+
+header.fixed
+  .address, .header-box
+    display: none
+  .menu
+    width: calc(100% - 190px)
+    margin: 0 auto 0 0
+    order: -1
 
 .logo
   display: flex
@@ -377,6 +448,43 @@ header
   .logo
     margin: 0 0 10px
     max-width: 103px
+  .menu
+    font-size: 15px
+    margin: 10px 0 30px
+    li
+      width: 100%
+      margin: 0 0 25px
+      &:last-child
+        margin: 0
+  &__box
+    width: 100%
+    padding: 20px 0 0
+    border-top: 1px solid $accent
+    max-width: 216px
+  .phone
+    color: $accent
+    font-size: 18px
+  .address
+    margin: 25px 0 15px
+  .btn
+    height: 40px
+  .menu-catalog-list
+    li
+      margin: 0 0 15px
+      &:last-child
+        margin: 0
+  .links-grey
+    color: #B3B3B3
+  .menu-catalog
+    width: calc(100% - 79px)
+    height: 100%
+    overflow-y: auto
+    top: 0
+    &:before
+      display: none
+  .links-catalog.click
+    &:before
+      display: none
 
 .btn-close-menu
   position: absolute
@@ -390,6 +498,95 @@ header
   align-items: center
   justify-content: center
   fill: #fff
+
+.menu-catalog
+  display: none
+  position: fixed
+  left: 0
+  top: 111px
+  background: #fff
+  padding: 37px 24px
+  width: 100%
+  z-index: 5
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 0
+    transform: translate(-50%,0)
+    height: 1px
+    max-width: 1178px
+    width: 100%
+    background: #DDDDDD
+  h4
+    color: $accent
+    font-weight: bold
+    margin: 0 0 10px
+    font-size: 15px
+  &-col
+    margin: 0 0 25px
+  .container
+    position: relative
+
+.btn-close-menu-catalog
+  position: absolute
+  right: 0
+  top: 0
+  fill: $accent
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 21px
+  height: 22px
+  z-index: 1
+
+.links-catalog
+  position: relative
+
+.links-catalog.click
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: -18px
+    width: 100%
+    height: 3px
+    background: $accent
+
+.menu-catalog-list
+  font-size: 13px
+  margin: 0 0 15px
+  li
+    margin: 0 0 15px
+    &:last-child
+      margin: 0
+    a
+      color: #373737
+      display: flex
+      align-items: center
+      &:before
+        content: ''
+        display: flex
+        align-items: center
+        justify-content: center
+  .active
+    font-weight: bold
+    &:before
+      background: url("../img/arrow-menu.svg") no-repeat center
+        size: 100%
+      width: 20px
+      height: 8px
+      margin: 0 10px 0 0
+
+.overlay-menu
+  background: rgba(29, 42, 61, 0.61)
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  display: none
+  z-index: 2
 
 //main
 .main
@@ -438,7 +635,8 @@ header
 
 .popular-services
   padding: 0 0 54px
-
+  position: relative
+  z-index: 1
   h2
     margin: 47px 0 42px
 
@@ -695,6 +893,13 @@ header
 .materials-slider
   margin: 40px 0 0
 
+.materials-slider__wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 0 40px 0 0
+
 .materials-box
   display: flex
   align-items: center
@@ -717,13 +922,18 @@ header
 
 .reviews-slider
   margin: 34px 0 0
-  .slick-current + .slick-slide
-    .reviews-box
-      margin: 0 0 58px auto
+
+.reviews-slider__wrapper
+  width: 100%
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+  flex-wrap: wrap
+
 
 .reviews-box
   max-width: 550px
-  width: 100%
+  width: calc(50% - 30px)
   background: #fff
   box-shadow: 0px 8px 60px rgba(217, 234, 239, 0.9)
   border-radius: 10px
@@ -749,15 +959,12 @@ header
     align-items: center
     margin: 0 0 10px
     min-height: 68px
-    &-wrapper
-      width: 100%
-      display: flex
-      align-items: flex-start
+
   h3
     font-size: 18px
     margin: 0 0 10px
   .list-rating
-    margin: 0 0 0 auto
+    margin: -10px 0 10px auto
 
 .name-operation
   font-size: 13px
@@ -827,6 +1034,192 @@ header
     max-width: 243px
     width: 100%
 
+//.question
+.card
+  border: none
+    top: 1px solid #EBEBEB
+    radius: 0
+
+.accordion>.card>.card-header
+  margin: 0
+
+.card-header
+  padding: 23px 10px 23px 0
+  display: flex
+  align-items: center
+  justify-content: space-between
+  border: none
+    radius: 0
+  cursor: pointer
+  margin: 0
+  background: transparent
+  &__icon
+
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    padding: 7px
+    min-width: 40px
+    width: 40px
+    height: 40px
+    transition: .3s ease
+    fill: #C4C4C4
+    transform: rotate(45deg)
+    &:hover, &:focus
+      background: #1AB9CA
+      fill: #fff
+  h4
+    font-weight: bold
+    font-size: 21px
+    font-family: $lato
+    padding: 0 120px 0 0
+
+.card-header.collapsed
+  .card-header__icon
+    transform: none
+    fill: $accent
+    &:hover, &:focus
+      background: #1AB9CA
+      fill: #fff
+
+.card-body
+  padding: 0 100px 20px 0
+
+//clinic-tour
+.clinic-tour
+  h2
+    margin: 0 0 32px
+    color: #ffff
+
+.icon-arrow
+  max-width: 237px
+  width: 100%
+  height: 23px
+  margin: 50px 0 0
+  fill: #fff
+  display: flex
+  align-items: center
+
+  .svg-icon
+    width: 100%
+    height: 100%
+
+.tour-box
+  width: 100%
+  height: 482px
+  position: relative
+  background: #F2F2F2
+  p
+    position: absolute
+    text-align: center
+    width: 100%
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    color: #939393
+    font-size: 35px
+    font-weight: bold
+
+//recommended-articles
+.recommended-articles
+  padding: 88px 0 83px
+  h2
+    margin: 0
+
+.recommended-articles-slider
+  margin: 50px -10px 67px
+
+.recommended-articles-box
+  width: calc(100% - 20px)
+  margin: 0 auto
+  border: 1px solid #ECE9F1
+    radius: 10px
+  background: #fff
+  overflow: hidden
+  height: 444px
+  &__img
+    width: 100%
+    height: 153px
+    border-radius: 10px 10px 0px 0px
+    background: #C4C4C4
+  &__body
+    width: 100%
+    height: calc(100% - 153px)
+    padding: 15px 39px 35px 37px
+    display: flex
+    flex-direction: column
+  h3
+    font-size: 21px
+    margin: 0 0 15px
+  .box-text
+    margin: 0 0 30px
+  .links-details
+    .svg-icon
+      width: 38px
+
+.author-article
+  text-align: right
+  color: #B2B2B2
+  font-size: 13px
+  font-weight: 500
+  max-width: 140px
+
+
+.recommended-articles__footer
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin: auto 0 0
+
+.recommended-articles__line
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  font-size: 13px
+  color: #B2B2B2
+  margin: 0 0 10px
+
+
+.appointment
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  background: #fff
+  border-radius: 10px
+  box-shadow: 0px 8px 60px rgba(217, 234, 239, 0.9)
+  padding: 16px 50px 4px 90px
+  &-icon
+    display: flex
+    align-items: center
+    max-width: 132px
+    width: 100%
+  &-body
+    width: calc(100% - 132px)
+    padding: 0 0 0 80px
+  h3
+    font-size: 35px
+    margin: 0 0 50px
+
+.form-appointment
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+  label
+    width: calc(100% - 230px)
+    padding: 0 20px 0 0
+  .checkbox
+    padding: 0
+    width: 100%
+  button
+    margin: 0 50px 0 0
+    max-width: 180px
+
 //map
 .map
   width: 100%
@@ -838,8 +1231,86 @@ header
 
 //footer
 footer
+  padding: 60px 0 57px
   background: $footer
   color: #fff
+  .address
+    color: #fff
+
+.payments
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: flex-end
+  width: 100%
+  color: #747474
+  font-size: 13px
+
+.list-pay
+  display: flex
+  align-items: center
+  li
+    margin: 0 0 0 30px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.list-social
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 23px 0 0
+  li
+    margin: 0 22px 0 0
+    &:last-child
+      margin: 0
+    a
+      width: 33px
+      height: 33px
+      min-width: 33px
+      padding: 8px
+      fill: $accent
+      display: flex
+      align-items: center
+      justify-content: center
+      background: #ffffff
+      border-radius: 50%
+      &:hover
+        background: $accent
+        fill: #fff
+
+.copyright
+  font-family: $rubik
+  color: #747474
+  font-size: 13px
+  line-height: 15px
+
+.footer-menu
+  font-size: 16px
+  font-family: $rubik
+  line-height: 30px
+  column-count: 3
+  li
+    a
+      color: #fff
+      &:hover
+        color: $accent
+
+.mail
+  color: $accent
+  font-size: 16px
+  &:hover
+    color: $hover
+
+.footer-box
+  margin: 0 0 40px
+  font-family: $rubik
+  line-height: 30px
+  .schedule
+    color: #747474
+    margin: 0
+
+
 
 
 @import "media"
