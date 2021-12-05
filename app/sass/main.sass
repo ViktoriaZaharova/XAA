@@ -199,7 +199,9 @@ label
 .btn-load
   max-width: 282px
   width: 100%
-  margin: 0 auto
+  margin: 10px 0 0
+  padding: 0 54px 0 80px
+  justify-content: space-between
   .btn-icon
     width: 15px
     height: 8px
@@ -252,7 +254,7 @@ h1
   font-size: 144px
   font-family: $font
   color: $accent
-  line-height: 208px
+  line-height: 160px
   width: 100%
 
 h2
@@ -260,17 +262,17 @@ h2
   font-size: 35px
   font-weight: bold
   color: $accent
-  margin: 0 0 35px
+  margin: 0 0 30px
 
 h3
   font-weight: bold
   font-size: 25px
   width: 100%
   color: #000
-  margin: 0 0 20px
+  margin: 0 0 23px
 
-.mb-24
-  margin-bottom: 24px
+.mb-19
+  margin-bottom: 19px
 
 .mb-40
   margin-bottom: 40px
@@ -334,6 +336,7 @@ header
 
   .btn
     height: 41px
+    margin: -4px 0 4px
 
 header.fixed
   .address, .header-box
@@ -355,11 +358,11 @@ header.fixed
 .header-box
   display: flex
   align-items: center
-  margin: 0 20px 0 0
+  margin: 0 45px 4px 0
 
 .schedule
   color: #727272
-  margin: 0 20px 0 0
+  margin: 0 24px 0 0
 
 .phone
   font-size: 18px
@@ -604,14 +607,14 @@ header.fixed
 
   img
     width: 100%
-    margin: -10px 0 0
+    margin: 3px 0 0
 
   &:before
     content: ''
     position: absolute
-    left: 50%
+    left: 47%
     transform: translate(-50%, 0)
-    top: 25px
+    top: 29px
     border-radius: 50%
     background: #EFEFEF
     width: 440px
@@ -660,10 +663,10 @@ header.fixed
 
   &__body
     width: calc(100% - 165px)
-    padding: 0 0 0 20px
+    padding: 0 0 0 17px
 
   .links-details
-    margin: 30px 0 0
+    margin: 33px 0 0
 
 
 //about-doctor
@@ -725,6 +728,9 @@ header.fixed
 //statistics
 .statistics
   padding: 54px 0
+  .box-text
+    max-width: 746px
+    margin: 0 auto
 
 .statistics-box
   margin: 0 0 40px
@@ -735,7 +741,7 @@ header.fixed
     font-weight: bold
     color: #000
     margin: 0 0 16px
-    padding: 0 0 13px
+    padding: 0 0 8px
     line-height: 55px
     position: relative
 
@@ -758,8 +764,9 @@ header.fixed
 
 //advantages
 .advantages
-  padding: 0 0 50px
-
+  padding: 0 0 47px
+  .box-text
+    max-width: 360px
   h2
     margin: 0 0 15px
 
@@ -801,6 +808,8 @@ header.fixed
     background: $accent
     left: 0
     top: 0
+  .slider-nav
+    margin: 3px 0 -6px
 
 .slick-slider
   width: 100%
@@ -845,9 +854,11 @@ header.fixed
 
 //examples-operation
 .examples-operation
-  padding: 56px 0
+  padding: 48px 0 56px
   h2
     margin: 0 auto 20px
+  .box-text
+    margin: 0 auto 2px
 
 .examples-operation-col
   display: none
@@ -875,8 +886,11 @@ header.fixed
   h3
     margin: 0 0 13px
     font-size: 15px
+    line-height: 25px
   .links-details
     margin: auto 0 0
+  .links-details .svg-icon
+    width: 63px
 
 //.gallery-wrapper
 .gallery-wrapper
@@ -891,7 +905,7 @@ header.fixed
     margin: 0 0 20px
 
 .materials-slider
-  margin: 40px 0 0
+  margin: 60px 0 0
 
 .materials-slider__wrapper
   width: 100%
@@ -918,10 +932,13 @@ header.fixed
     background: url("../img/decor-bg2.svg") no-repeat center top
       size: 100%
   h2
-    margin: 0 auto 20px
+    margin: 0 auto 26px
 
 .reviews-slider
-  margin: 34px 0 0
+  margin: 70px 0 0
+
+.reviews-slider__nav
+  margin: 35px 0 -35px
 
 .reviews-slider__wrapper
   width: 100%
@@ -932,13 +949,15 @@ header.fixed
 
 
 .reviews-box
-  max-width: 550px
-  width: calc(50% - 30px)
+  //max-width: 550px
+  width: calc(50% - 50px)
   background: #fff
   box-shadow: 0px 8px 60px rgba(217, 234, 239, 0.9)
   border-radius: 10px
-  padding: 32px 27px 35px 57px
-  margin: 0 0 58px
+  padding: 32px 27px 35px 50px
+  margin: 0 0 54px
+  &:last-child
+    width: calc(50% - 10px)
   &__photo
     display: flex
     align-items: center
@@ -993,19 +1012,19 @@ header.fixed
 .average-rating
   display: flex
   align-items: center
-  margin: 0 0 10px
+  margin: 7px 0 15px
   .list-rating
-    margin: 0 0 0 18px
+    margin: 0 0 0 23px
   p
     font-weight: bold
 
 //social-network
 .social-network
-  padding: 65px 0
+  padding: 71px 0 100px
   h2
     margin: 0 auto 20px
   .box-text
-    margin: 0 auto 30px
+    margin: 2px auto 34px
 
 .social-network-box
   background: #C4C4C4
@@ -1021,7 +1040,7 @@ header.fixed
   height: 380px
 
 .subscribe-wrapper
-  padding: 20px 20px 0
+  padding: 20px 38px 0
   &__item
     display: flex
     align-items: center
@@ -1035,6 +1054,11 @@ header.fixed
     width: 100%
 
 //.question
+.question
+  padding: 0 0 37px
+  h2
+    margin: 0 0 50px
+
 .card
   border: none
     top: 1px solid #EBEBEB
@@ -1074,6 +1098,7 @@ header.fixed
     font-size: 21px
     font-family: $lato
     padding: 0 120px 0 0
+    line-height: 29px
 
 .card-header.collapsed
   .card-header__icon
@@ -1088,12 +1113,14 @@ header.fixed
 
 //clinic-tour
 .clinic-tour
+  padding: 90px 0
   h2
-    margin: 0 0 32px
+    margin: -14px 0 32px
     color: #ffff
+    max-width: 225px
 
 .icon-arrow
-  max-width: 237px
+  max-width: 260px
   width: 100%
   height: 23px
   margin: 50px 0 0
@@ -1186,7 +1213,7 @@ header.fixed
 .appointment
   width: 100%
   display: flex
-  align-items: center
+  align-items: stretch
   flex-wrap: wrap
   background: #fff
   border-radius: 10px
@@ -1199,7 +1226,7 @@ header.fixed
     width: 100%
   &-body
     width: calc(100% - 132px)
-    padding: 0 0 0 80px
+    padding: 32px 0 0 80px
   h3
     font-size: 35px
     margin: 0 0 50px
@@ -1303,7 +1330,7 @@ footer
     color: $hover
 
 .footer-box
-  margin: 0 0 40px
+  margin: 0 0 45px
   font-family: $rubik
   line-height: 30px
   .schedule

@@ -56,8 +56,8 @@
       bottom: 144px
 
   .main-img
-    max-width: 410px
-    margin: 40px auto 0
+    min-width: 410px
+    margin: 40px auto 0 -28px
     &:before
       width: 302px
       height: 302px
@@ -67,11 +67,13 @@
 
   h1
     font-size: 100px
-    line-height: 144px
+    line-height: 102px
 
   .main
     .btn
-      margin: 31px 0 0
+      margin: 30px 0 0
+    .box-text
+      max-width: 320px
 
   .header-box
     flex-direction: column
@@ -240,10 +242,11 @@
 
   .reviews-box
     width: 100%
-    margin: 0 auto 22px
+    margin: 0 auto 37px
     max-width: none
     &:last-child
       margin: 0 auto
+      width: 100%
 
   .reviews-slider
     margin: 24px 0 0
@@ -338,7 +341,7 @@
     padding: 0
 
   .nav-tabs
-    margin: 16px 0 0
+    margin: 24px 0 0
 
   .about-doctor__photo
     max-width: 328px
@@ -348,15 +351,17 @@
     align-items: flex-start
 
   .tab-content
-    padding: 27px 20px 23px
+    padding: 37px 20px 23px
     h3
       font-size: 18px
       margin: 0 0 10px
 
   .popular-services
-    padding: 0 0 40px
+    padding: 60px 0 50px
     h2
       margin: 0 0 20px
+    .box-text
+      max-width: 320px
 
   header
     .address
@@ -368,6 +373,7 @@
 
   .btn-burger
     display: block
+    margin: 0 5px 0 auto
 
   .header-box
     margin: 0 28px 0 auto
@@ -380,6 +386,8 @@
     .header-box
       display: flex
 
+  .ratings-wrapper
+    margin: 65px 0 16px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
@@ -461,7 +469,7 @@
     margin: 11px 0 0
 
   .services-box
-    padding: 37px 20px 22px 24px
+    padding: 43px 20px 22px 36px
     align-items: flex-start
     &__icon
       max-width: 62px
@@ -477,6 +485,7 @@
   header
     .logo
       max-width: 109px
+      margin: 0 0 0 10px
 
   .wrapper
     padding: 71px 0 0
@@ -484,7 +493,11 @@
   header.fixed
     padding: 11px 0 12px
 
+  .mb-19
+    margin-bottom: 28px
+
 @media only screen and (max-width: 480px)
+
 
   .about-doctor
     .nav-tabs
@@ -494,7 +507,8 @@
         display: none
         &:first-child
           display: block
-
+    .box-text
+      max-width: 320px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)
@@ -503,6 +517,145 @@
       width: 100%
 
 @media only screen and (max-width: 370px)
+  .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto
+    padding: 0 18px
+
+
   .header-box
-    margin: 0 10px 0 0
+    margin: 0
     font-size: 10px
+
+  .btn-burger
+    margin: 0 0 0 auto
+
+  .main-img
+    margin: 40px auto 0 -36px
+
+  .services-box
+    padding: 35px 20px 22px 36px
+
+
+  .mb-19
+    margin-bottom: 36px
+
+  .popular-services
+    padding: 60px 0 44px
+
+  .services-box__body
+    padding: 0 0 0 15px
+
+  .tab-content
+    padding: 37px 43px 23px 20px
+
+  .about-doctor__photo
+    height: 353px
+    margin: 20px auto 26px
+
+  .statistics-box__num
+    padding: 0 0 14px
+
+  .statistics-box
+    .box-text
+      font-size: 14px
+
+  .statistics
+    padding: 64px 0 44px
+
+  .advantages
+    .box-text
+      font-size: 14.5px
+
+  .advantages-box
+    padding: 30px 30px 40px 32px
+
+  .advantages .mb-40
+    margin-bottom: 19px
+
+  .advantages
+    padding: 0 0 54px
+
+  .certification-slider .slick-arrow
+    top: 55%
+
+  .certification-slider .slick-next
+    right: -4px
+
+  .certification-slider .slick-prev
+    left: 2px
+
+  .examples-operation
+    padding: 92px 0 60px
+    h2
+      max-width: 300px
+    .mb-35
+      margin-bottom: 30px
+
+
+  .examples-operation-box__body
+    padding: 11px 0 0
+
+  .examples-operation-box .links-details .svg-icon
+    margin: 0 0 0 45px
+
+  .btn-load
+    max-width: none
+    width: 100%
+    margin: 36px 0 0
+
+  .materials-slider
+    margin: -11px 0 0
+
+  .materials
+    padding: 60px 0
+
+  .reviews-box
+    padding: 37px 20px 24px 24px
+
+  .social-network h2
+    margin: 0 auto 12px
+
+  .social-network-slider .slick-next
+    right: 0
+
+  .social-network-slider .slick-prev
+    left: 7px
+
+  .social-network
+    padding: 50px 0 56px
+
+  .question
+    padding: 0 0 27px
+    h2
+      margin: 0 0 22px
+
+  .card-header
+    padding: 15px 0 12px
+
+  .clinic-tour .icon-arrow
+    margin: 22px 0 0
+
+  .tour-box
+    margin: 27px 0 0
+
+  .recommended-articles__line
+    margin: 0 0 19px
+
+  .recommended-articles-slider
+    margin: 38px 0 26px
+
+  .appointment h3
+    margin: 0 0 42px
+
+  .recommended-articles
+    padding: 79px 0 75px
+
+  .map
+    height: 326px
+
+  .footer-box
+    &:first-child
+      margin: 0 0 46px
+
+  .copyright
+    margin: 10px 0 0
+
