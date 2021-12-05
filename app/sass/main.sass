@@ -442,6 +442,8 @@ header.fixed
   background: linear-gradient(0deg, rgba(29, 42, 61, 0.61), rgba(29, 42, 61, 0.61)), #FFFFFF
 
   &__body
+    display: flex
+    flex-direction: column
     height: 100%
     overflow-y: auto
     background: #fff
@@ -463,7 +465,8 @@ header.fixed
     width: 100%
     padding: 20px 0 0
     border-top: 1px solid $accent
-    max-width: 216px
+    //max-width: 216px
+    margin: auto 0 0
   .phone
     color: $accent
     font-size: 18px
