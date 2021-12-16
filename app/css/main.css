@@ -468,6 +468,7 @@ header.fixed .menu {
     height: 100%;
     overflow-y: auto;
     background: #fff;
+    max-width: 296px;
     width: calc(100% - 79px);
     padding: 19px 24px 29px; }
   .mobile-menu .logo {
