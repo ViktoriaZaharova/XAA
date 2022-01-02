@@ -1146,6 +1146,67 @@ header.fixed .menu {
   .average-rating p {
     font-weight: bold; }
 
+.reviews-home-wrapper {
+  margin: 54px 0 0;
+  display: none; }
+  .reviews-home-wrapper .form-reviews label {
+    margin: 0 0 32px; }
+  .reviews-home-wrapper .form-reviews .checkbox {
+    font-size: 12px; }
+  .reviews-home-wrapper .form-reviews .checkbox-custom {
+    margin-top: 0; }
+  .reviews-home-wrapper .form-reviews input {
+    padding: 0 0 17px; }
+  .reviews-home-wrapper h3 {
+    margin: 0 0 32px; }
+  .reviews-home-wrapper .captcha {
+    max-width: 279px;
+    width: 100%; }
+  .reviews-home-wrapper .btn-group .btn {
+    margin: 0 20px 0 0;
+    max-width: 280px; }
+    .reviews-home-wrapper .btn-group .btn:last-child {
+      margin: 0; }
+  .reviews-home-wrapper .btn-group .btn-hidden-reviews {
+    max-width: 180px; }
+
+.rate-service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 5px 0 28px; }
+  .rate-service .list-rating {
+    margin: 0 0 0 15px; }
+    .rate-service .list-rating li {
+      width: 24px;
+      height: 23px;
+      margin: 0 10px 0 0; }
+
+.btn-hidden-reviews .btn-icon {
+  width: 14px;
+  height: 14px;
+  fill: #1AB9CA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 0 15px; }
+
+.btn-hidden-reviews:hover .btn-icon {
+  fill: #fff; }
+
 .social-network {
   padding: 71px 0 100px; }
   .social-network h2 {

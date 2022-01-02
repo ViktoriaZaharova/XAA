@@ -159,3 +159,16 @@ $('.btn-close-menu-catalog').on('click', function () {
     $('.menu-catalog').fadeOut();
     $('.overlay-menu').fadeOut();
 });
+
+// reviews block visible
+$('.btn-add-reviews').on('click', function (e) {
+    e.preventDefault();
+    $(this).fadeOut();
+    $('.reviews-home-wrapper').slideDown();
+});
+
+$('.btn-hidden-reviews').on('click', function (e) {
+    e.preventDefault();
+    $('.reviews-home-wrapper').slideUp();
+    $('.btn-add-reviews').css('display', 'flex');
+});

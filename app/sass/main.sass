@@ -106,8 +106,10 @@ input, textarea, select
   border: none
     radius: 0
     bottom: 1px solid #1AB9CA
+
   &::placeholder
     color: #A0A0A0
+
   &:hover, &:focus
     outline: none
     box-shadow: none
@@ -141,12 +143,13 @@ label
   height: 18px
   min-width: 18px
   margin: 3px 10px 0 0
+
   &:before
     content: ''
     position: absolute
     left: 50%
     top: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
     border-radius: 50%
     width: 10px
     height: 10px
@@ -202,6 +205,7 @@ label
   margin: 10px 0 0
   padding: 0 54px 0 80px
   justify-content: space-between
+
   .btn-icon
     width: 15px
     height: 8px
@@ -210,6 +214,7 @@ label
     display: flex
     align-items: center
     justify-content: center
+
   &:hover
     .btn-icon
       fill: #fff
@@ -321,6 +326,7 @@ h3
   color: #B3B3B3
   font-size: 13px
   text-decoration: underline
+
   &:hover
     color: $accent
 
@@ -341,6 +347,7 @@ header
 header.fixed
   .address, .header-box
     display: none
+
   .menu
     width: calc(100% - 190px)
     margin: 0 auto 0 0
@@ -454,41 +461,54 @@ header.fixed
   .logo
     margin: 0 0 10px
     max-width: 103px
+
   .menu
     font-size: 15px
     margin: 10px 0 30px
+
     li
       width: 100%
       margin: 0 0 25px
+
       &:last-child
         margin: 0
+
   &__box
     width: 100%
     padding: 20px 0 0
     border-top: 1px solid $accent
     //max-width: 216px
     margin: auto 0 0
+
   .phone
     color: $accent
     font-size: 18px
+
   .address
     margin: 25px 0 15px
+
   .btn
     height: 40px
+
   .menu-catalog-list
     li
       margin: 0 0 15px
+
       &:last-child
         margin: 0
+
   .links-grey
     color: #B3B3B3
+
   .menu-catalog
     width: calc(100% - 79px)
     height: 100%
     overflow-y: auto
     top: 0
+
     &:before
       display: none
+
   .links-catalog.click
     &:before
       display: none
@@ -515,23 +535,27 @@ header.fixed
   padding: 37px 24px
   width: 100%
   z-index: 5
+
   &:before
     content: ''
     position: absolute
     left: 50%
     top: 0
-    transform: translate(-50%,0)
+    transform: translate(-50%, 0)
     height: 1px
     max-width: 1178px
     width: 100%
     background: #DDDDDD
+
   h4
     color: $accent
     font-weight: bold
     margin: 0 0 10px
     font-size: 15px
+
   &-col
     margin: 0 0 25px
+
   .container
     position: relative
 
@@ -563,21 +587,27 @@ header.fixed
 .menu-catalog-list
   font-size: 13px
   margin: 0 0 15px
+
   li
     margin: 0 0 15px
+
     &:last-child
       margin: 0
+
     a
       color: #373737
       display: flex
       align-items: center
+
       &:before
         content: ''
         display: flex
         align-items: center
         justify-content: center
+
   .active
     font-weight: bold
+
     &:before
       background: url("../img/arrow-menu.svg") no-repeat center
         size: 100%
@@ -644,6 +674,7 @@ header.fixed
   padding: 0 0 54px
   position: relative
   z-index: 1
+
   h2
     margin: 47px 0 42px
 
@@ -732,6 +763,7 @@ header.fixed
 //statistics
 .statistics
   padding: 54px 0
+
   .box-text
     max-width: 746px
     margin: 0 auto
@@ -769,8 +801,10 @@ header.fixed
 //advantages
 .advantages
   padding: 0 0 47px
+
   .box-text
     max-width: 360px
+
   h2
     margin: 0 0 15px
 
@@ -785,6 +819,7 @@ header.fixed
   flex-wrap: wrap
   box-shadow: 0 8px 60px rgba(217, 234, 239, 0.9)
   padding: 35px 30px 40px 32px
+
   &__icon
     width: 45px
     display: flex
@@ -801,9 +836,11 @@ header.fixed
   z-index: 1
   color: #fff
   padding: 44px 0
+
   h2
     color: #fff
     margin: 0 0 20px
+
   &:before
     content: ''
     position: absolute
@@ -812,6 +849,7 @@ header.fixed
     background: $accent
     left: 0
     top: 0
+
   .slider-nav
     margin: 3px 0 -6px
 
@@ -833,8 +871,10 @@ header.fixed
   z-index: 1
   cursor: pointer
   transition: .3s ease
+
   &:hover
     background: $hover
+
   .svg-icon
     width: 12px
     height: 22px
@@ -844,6 +884,7 @@ header.fixed
   display: flex
   align-items: center
   justify-content: flex-end
+
   .slick-prev
     margin: 0 29px 0 0
 
@@ -859,19 +900,23 @@ header.fixed
 //examples-operation
 .examples-operation
   padding: 48px 0 56px
+
   h2
     margin: 0 auto 20px
+
   .box-text
     margin: 0 auto 2px
 
 .examples-operation-col
   display: none
+
   &:nth-child(-n+4)
     display: block
 
 .examples-operation-box
   width: 100%
   height: 100%
+
   &__img
     width: 100%
     height: 203px
@@ -879,32 +924,39 @@ header.fixed
     align-items: center
     justify-content: center
     background: #C4C4C4
+
   &__body
     height: calc(100% - 203px)
     width: 100%
     padding: 18px 0 0
     display: flex
     flex-direction: column
+
   .box-text
     margin: 0 0 15px
+
   h3
     margin: 0 0 13px
     font-size: 15px
     line-height: 25px
+
   .links-details
     margin: auto 0 0
+
   .links-details .svg-icon
     width: 63px
 
 //.gallery-wrapper
 .gallery-wrapper
   width: 100%
+
   &__img
     width: 100%
 
 //materials
 .materials
   padding: 75px 0 87px
+
   h2
     margin: 0 0 20px
 
@@ -924,17 +976,20 @@ header.fixed
   justify-content: center
   height: 60px
   max-width: 280px
+
   img
     max-height: 100%
 
 //reviews
 .reviews
   padding: 0 0 54px
+
   &:before
     bottom: auto
     top: 0
     background: url("../img/decor-bg2.svg") no-repeat center top
       size: 100%
+
   h2
     margin: 0 auto 26px
 
@@ -960,8 +1015,10 @@ header.fixed
   border-radius: 10px
   padding: 32px 27px 35px 50px
   margin: 0 0 54px
+
   &:last-child
     width: calc(50% - 10px)
+
   &__photo
     display: flex
     align-items: center
@@ -972,10 +1029,12 @@ header.fixed
     min-width: 68px
     border-radius: 50%
     margin: 0 20px 0 0
+
     img
       width: 100%
       height: 100%
       object-fit: cover
+
   &__head
     width: 100%
     display: flex
@@ -986,6 +1045,7 @@ header.fixed
   h3
     font-size: 18px
     margin: 0 0 10px
+
   .list-rating
     margin: -10px 0 10px auto
 
@@ -995,6 +1055,7 @@ header.fixed
 .list-rating
   display: flex
   align-items: center
+
   li
     margin: 0 11px 0 0
     width: 18px
@@ -1002,10 +1063,13 @@ header.fixed
     display: flex
     align-items: center
     justify-content: center
+
     &:last-child
       margin: 0
+
   .svg-icon
     fill: $yellow
+
   .star0
     fill: none
     stroke: $yellow
@@ -1017,16 +1081,75 @@ header.fixed
   display: flex
   align-items: center
   margin: 7px 0 15px
+
   .list-rating
     margin: 0 0 0 23px
+
   p
     font-weight: bold
+
+.reviews-home-wrapper
+  margin: 54px 0 0
+  display: none
+  .form-reviews
+    label
+      margin: 0 0 32px
+    .checkbox
+      font-size: 12px
+    .checkbox-custom
+      margin-top: 0
+    input
+      padding: 0 0 17px
+
+  h3
+    margin: 0 0 32px
+  .captcha
+    max-width: 279px
+    width: 100%
+  .btn-group
+    .btn
+      margin: 0 20px 0 0
+      max-width: 280px
+      &:last-child
+        margin: 0
+    .btn-hidden-reviews
+      max-width: 180px
+
+
+.rate-service
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  font-size: 15px
+  font-weight: bold
+  margin: 5px 0 28px
+  .list-rating
+    margin: 0 0 0 15px
+    li
+      width: 24px
+      height: 23px
+      margin: 0 10px 0 0
+
+.btn-hidden-reviews
+  .btn-icon
+    width: 14px
+    height: 14px
+    fill: #1AB9CA
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 0 0 15px
+  &:hover
+    .btn-icon
+      fill: #fff
 
 //social-network
 .social-network
   padding: 71px 0 100px
+
   h2
     margin: 0 auto 20px
+
   .box-text
     margin: 2px auto 34px
 
@@ -1045,13 +1168,16 @@ header.fixed
 
 .subscribe-wrapper
   padding: 20px 38px 0
+
   &__item
     display: flex
     align-items: center
+
     .box-text
       margin: 0 0 0 23px
       max-width: 163px
       width: 100%
+
   .btn
     margin: 27px 0 0
     max-width: 243px
@@ -1060,6 +1186,7 @@ header.fixed
 //.question
 .question
   padding: 0 0 37px
+
   h2
     margin: 0 0 50px
 
@@ -1068,7 +1195,7 @@ header.fixed
     top: 1px solid #EBEBEB
     radius: 0
 
-.accordion>.card>.card-header
+.accordion > .card > .card-header
   margin: 0
 
 .card-header
@@ -1081,6 +1208,7 @@ header.fixed
   cursor: pointer
   margin: 0
   background: transparent
+
   &__icon
 
     display: flex
@@ -1094,9 +1222,11 @@ header.fixed
     transition: .3s ease
     fill: #C4C4C4
     transform: rotate(45deg)
+
     &:hover, &:focus
       background: #1AB9CA
       fill: #fff
+
   h4
     font-weight: bold
     font-size: 21px
@@ -1108,6 +1238,7 @@ header.fixed
   .card-header__icon
     transform: none
     fill: $accent
+
     &:hover, &:focus
       background: #1AB9CA
       fill: #fff
@@ -1118,6 +1249,7 @@ header.fixed
 //clinic-tour
 .clinic-tour
   padding: 90px 0
+
   h2
     margin: -14px 0 32px
     color: #ffff
@@ -1141,13 +1273,14 @@ header.fixed
   height: 482px
   position: relative
   background: #F2F2F2
+
   p
     position: absolute
     text-align: center
     width: 100%
     left: 50%
     top: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
     color: #939393
     font-size: 35px
     font-weight: bold
@@ -1155,6 +1288,7 @@ header.fixed
 //recommended-articles
 .recommended-articles
   padding: 88px 0 83px
+
   h2
     margin: 0
 
@@ -1169,22 +1303,27 @@ header.fixed
   background: #fff
   overflow: hidden
   height: 444px
+
   &__img
     width: 100%
     height: 153px
     border-radius: 10px 10px 0px 0px
     background: #C4C4C4
+
   &__body
     width: 100%
     height: calc(100% - 153px)
     padding: 15px 39px 35px 37px
     display: flex
     flex-direction: column
+
   h3
     font-size: 21px
     margin: 0 0 15px
+
   .box-text
     margin: 0 0 30px
+
   .links-details
     .svg-icon
       width: 38px
@@ -1223,14 +1362,17 @@ header.fixed
   border-radius: 10px
   box-shadow: 0px 8px 60px rgba(217, 234, 239, 0.9)
   padding: 16px 50px 4px 90px
+
   &-icon
     display: flex
     align-items: center
     max-width: 132px
     width: 100%
+
   &-body
     width: calc(100% - 132px)
     padding: 32px 0 0 80px
+
   h3
     font-size: 35px
     margin: 0 0 50px
@@ -1244,9 +1386,11 @@ header.fixed
   label
     width: calc(100% - 230px)
     padding: 0 20px 0 0
+
   .checkbox
     padding: 0
     width: 100%
+
   button
     margin: 0 50px 0 0
     max-width: 180px
@@ -1265,6 +1409,7 @@ footer
   padding: 60px 0 57px
   background: $footer
   color: #fff
+
   .address
     color: #fff
 
@@ -1280,6 +1425,7 @@ footer
 .list-pay
   display: flex
   align-items: center
+
   li
     margin: 0 0 0 30px
     display: flex
@@ -1291,10 +1437,13 @@ footer
   align-items: center
   flex-wrap: wrap
   margin: 23px 0 0
+
   li
     margin: 0 22px 0 0
+
     &:last-child
       margin: 0
+
     a
       width: 33px
       height: 33px
@@ -1306,6 +1455,7 @@ footer
       justify-content: center
       background: #ffffff
       border-radius: 50%
+
       &:hover
         background: $accent
         fill: #fff
@@ -1321,15 +1471,18 @@ footer
   font-family: $rubik
   line-height: 30px
   column-count: 3
+
   li
     a
       color: #fff
+
       &:hover
         color: $accent
 
 .mail
   color: $accent
   font-size: 16px
+
   &:hover
     color: $hover
 
@@ -1337,11 +1490,10 @@ footer
   margin: 0 0 45px
   font-family: $rubik
   line-height: 30px
+
   .schedule
     color: #747474
     margin: 0
-
-
 
 
 @import "media"
