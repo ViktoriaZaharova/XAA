@@ -199,6 +199,15 @@ label
     background: $accent
     color: #fff
 
+.btn-white
+  background: #fff
+  font-size: 15px
+  color: $accent
+  font-weight: bold
+  &:hover
+    background: $hover
+    color: #fff
+
 .btn-load
   max-width: 282px
   width: 100%
@@ -284,6 +293,9 @@ h3
 
 .mb-35
   margin-bottom: 35px
+
+.mb-24
+  margin-bottom: 24px
 
 .p-90
   padding: 90px 0
@@ -1100,7 +1112,8 @@ header.fixed
       margin-top: 0
     input
       padding: 0 0 17px
-
+    textarea
+      height: 149px
   h3
     margin: 0 0 32px
   .captcha
@@ -1129,6 +1142,8 @@ header.fixed
       width: 24px
       height: 23px
       margin: 0 10px 0 0
+      &:last-child
+        margin: 0
 
 .btn-hidden-reviews
   .btn-icon
@@ -1494,6 +1509,116 @@ footer
   .schedule
     color: #747474
     margin: 0
+
+
+//breadcrumb-nav
+.breadcrumb-nav
+  width: 100%
+  margin: 0 0 20px
+
+.breadcrumb
+  margin: 0
+  padding: 0
+  background: transparent
+  border-radius: 0
+  font-size: 12px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.breadcrumb-item+.breadcrumb-item
+  padding: 0
+
+  &:before
+    content: ''
+    margin: 0 5px
+    padding: 0
+    width: 20px
+    height: 8px
+    background: url("../img/arrow-right.svg") no-repeat center
+      size: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
+.breadcrumb-item
+  color: #ACACAC
+  display: flex
+  align-items: center
+  a
+    color: #ACACAC
+  &.active
+    color: #ACACAC
+
+//.error-page
+.error-page
+  .breadcrumb-nav
+    margin: 0 0 48px
+  h1
+    margin: 0 0 22px
+    font-size: 35px
+    font-weight: bold
+    line-height: normal
+  .box-text
+    margin: 27px 0
+    max-width: 578px
+    width: 100%
+    line-height: 30px
+    font-size: 15px
+  .btn-group
+    .btn
+      max-width: 286px
+      margin: 0 53px 0 0
+      &:last-child
+        margin: 0
+        max-width: 277px
+
+.error-name
+  margin: 0 auto
+  text-align: center
+  width: 100%
+  font-size: 283px
+  font-weight: normal
+  font-family: $font
+  color: $accent
+  line-height: 1
+
+
+.promo-box
+  width: 100%
+  display: flex
+  align-items: center
+  max-width: 645px
+  padding: 23px 35px 18px 23px
+  background: linear-gradient(180deg, #0CBACD 0%, #09D7BD 100%)
+  border-radius: 10px
+  box-shadow: 0px 8px 60px rgba(217, 234, 239, 0.9)
+  h3
+    font-size: 21px
+    color: #fff
+    font-weight: bold
+    margin: 0
+    line-height: 32px
+    span
+      font-weight: normal
+      color: #373737
+      font-size: 15px
+  &__content
+    font-family: $lato
+    width: calc(100% - 180px)
+  .btn
+    max-width: 180px
+    width: 100%
+
+.popular-services2
+  padding: 66px 0 61px
+  &:before
+    bottom: 86px
+  h2
+    margin: 0 0 11px
+  .box-text
+    margin: 0 0 50px
+
 
 
 @import "media"
