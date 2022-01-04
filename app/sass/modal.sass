@@ -1,0 +1,79 @@
+@import "fonts"
+@import "vars"
+
+.modal-backdrop
+  background: rgba(29, 42, 61, 0.61)
+
+.modal-backdrop.show
+  opacity: 1
+
+.modal-content
+  border: none
+    radius: 10px
+  position: relative
+  padding: 44px 90px 82px
+  .form
+    button
+      margin: 24px auto 0
+      max-width: 329px
+      width: 100%
+    label
+      width: calc(50% - 10px)
+      margin: 0 0 19px
+    .checkbox
+      margin: 0 0 19px
+      font-size: 12px
+      width: 100%
+    .checkbox-custom
+      margin-top: 0
+    input
+      padding: 0 0 17px
+  .form-group
+    &:last-child
+      margin: 0
+
+.modal-dialog
+  max-width: 777px
+
+.close
+  right: -41px
+  top: 0
+  width: 21px
+  height: 21px
+  opacity: 1
+  cursor: pointer
+  display: flex
+  align-items: center
+  justify-content: center
+  transition: .3s ease
+  padding: 0
+  margin: 0
+  position: absolute
+  .svg-icon
+    fill: #fff
+
+.modal-header
+  padding: 0
+  flex-wrap: wrap
+  border: none
+  text-align: center
+  margin: 0 0 25px
+
+.modal-body
+  padding: 0
+
+.modal-title
+  text-align: center
+  width: 100%
+  margin: 0 auto 17px
+  line-height: normal
+
+.form-group
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 0 0 11px
+  justify-content: space-between
+
+
