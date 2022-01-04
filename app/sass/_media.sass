@@ -152,7 +152,11 @@
   .materials-slider__wrapper
     justify-content: space-around
 
+  .modal-content
+    padding: 30px
 
+  .modal-dialog
+    max-width: 600px
 
 @media only screen and (max-width: 768px)
   .footer-menu
@@ -460,6 +464,9 @@
     .box-text
       max-width: none
 
+  .modal-dialog
+    max-width: 450px
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
   .footer-menu
@@ -579,9 +586,17 @@
         max-width: 180px
         margin: 0 auto
 
+  .modal-dialog
+    max-width: none
+
+  .close
+    right: 20px
+    top: 20px
+    .svg-icon
+      fill: $hover
+
+
 @media only screen and (max-width: 480px)
-
-
   .about-doctor
     .nav-tabs
       .nav-item
@@ -592,6 +607,17 @@
           display: block
     .box-text
       max-width: 320px
+
+  .modal-content .form label
+    width: 100%
+    margin: 0 0 15px
+
+  .modal-content .form input
+    padding: 0 0 10px
+
+  .form-group
+    margin: 0
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)

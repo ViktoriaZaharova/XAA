@@ -33,6 +33,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"/>
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/datepicker.css">
   <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -614,19 +615,86 @@
               <input type="text" placeholder="Услуга" name="service">
             </label>
             <label>
-              <input type="text" placeholder=" Выбрать дату" name="date" class="datepicker">
+              <input type="text" placeholder="Выбрать дату" name="datepicker" class="datepicker">
             </label>
           </div>
 
           <label class="checkbox">
             <input type="checkbox" checked class="inp-check">
             <span class="checkbox-custom"></span>
-            <span class="checkbox-text">Я ознакомлен и согласен с Политикой в отношении обработки персональных данных</span>
+            <span
+                class="checkbox-text">Я ознакомлен и согласен с Политикой в отношении обработки персональных данных</span>
           </label>
 
           <button type="submit" class="btn btn-accent">Оставить отзыв</button>
 
         </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+
+      <div class="modal-header">
+        <h3 class="modal-title">Заголовок</h3>
+        <div class="subtitle-modal">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+        </div>
+
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form form-reviews">
+          <div class="form-group">
+            <label>
+              <input type="text" placeholder="Имя" name="name">
+            </label>
+            <label>
+              <input type="text" placeholder="Телефон" name="phone">
+            </label>
+          </div>
+
+          <label class="label-textarea">
+            <textarea name="message" placeholder="Ваш отзыв"></textarea>
+          </label>
+
+          <label class="checkbox">
+            <input type="checkbox" checked class="inp-check">
+            <span class="checkbox-custom"></span>
+            <span
+                class="checkbox-text">Я ознакомлен и согласен с Политикой в отношении обработки персональных данных</span>
+          </label>
+
+          <button type="submit" class="btn btn-accent">Оставить отзыв</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+
+      <div class="modal-header">
+        <h3 class="modal-title">Спасибо </h3>
+        <div class="subtitle-modal">
+          <p>мы свяжемся с вами в ближайшее время</p>
+        </div>
+        <a href="#" class="btn btn-accent btn-close-modal" data-dismiss="modal" aria-label="Close">Закрыть</a>
       </div>
     </div>
   </div>
@@ -640,7 +708,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
         integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
+        integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/datepicker.js"></script>
 <script src="js/common.js"></script>
 
 </body>

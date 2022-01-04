@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -189,6 +190,14 @@ label {
     background: #1AB9CA;
     color: #fff; }
 
+.btn-border-white {
+  border: 1px solid #fff;
+    border-radius: 30px;
+  color: #fff; }
+  .btn-border-white:hover {
+    background: #fff;
+    color: #1AB9CA; }
+
 .btn-white {
   background: #fff;
   font-size: 15px;
@@ -278,6 +287,9 @@ h3 {
   width: 100%;
   color: #000;
   margin: 0 0 23px; }
+
+.mb-15 {
+  margin-bottom: 15px; }
 
 .mb-19 {
   margin-bottom: 19px; }
@@ -1866,7 +1878,11 @@ footer {
     padding: 0; }
   .materials-slider__wrapper {
     -ms-flex-pack: distribute;
-        justify-content: space-around; } }
+        justify-content: space-around; }
+  .modal-content {
+    padding: 30px; }
+  .modal-dialog {
+    max-width: 600px; } }
 
 @media only screen and (max-width: 768px) {
   .footer-menu {
@@ -2149,7 +2165,9 @@ footer {
     .popular-services2:before {
       bottom: 195px; }
     .popular-services2 .box-text {
-      max-width: none; } }
+      max-width: none; }
+  .modal-dialog {
+    max-width: 450px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -2251,7 +2269,14 @@ footer {
       margin: 0 auto; }
   .reviews-home-wrapper .btn-group .btn-hidden-reviews {
     max-width: 180px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .modal-dialog {
+    max-width: none; }
+  .close {
+    right: 20px;
+    top: 20px; }
+    .close .svg-icon {
+      fill: #727272; } }
 
 @media only screen and (max-width: 480px) {
   .about-doctor .nav-tabs .nav-item {
@@ -2261,7 +2286,14 @@ footer {
     .about-doctor .nav-tabs .nav-item:first-child {
       display: block; }
   .about-doctor .box-text {
-    max-width: 320px; } }
+    max-width: 320px; }
+  .modal-content .form label {
+    width: 100%;
+    margin: 0 0 15px; }
+  .modal-content .form input {
+    padding: 0 0 10px; }
+  .form-group {
+    margin: 0; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {

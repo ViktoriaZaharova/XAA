@@ -1,0 +1,98 @@
+@import "fonts"
+@import "vars"
+
+.ui-datepicker.ui-widget.ui-widget-content
+  width: 100%
+  max-width: 328px
+  border: none
+    radius: 10px
+  box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.27)
+  padding: 18px 28px 24px
+  font-family: $ibm
+
+.ui-datepicker
+  .ui-datepicker-header
+    margin: 0 0 10px
+    border: none
+    padding: 4px 12px
+    background: transparent
+    display: flex
+    align-items: center
+    justify-content: center
+  .ui-datepicker-title
+    text-align: center
+    color: #000000
+    line-height: normal
+    font-size: 16px
+    margin: 0 12px
+    letter-spacing: 0.12px
+    width: fit-content
+    font-weight: normal
+  .ui-datepicker-prev, .ui-datepicker-next
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 6px
+    height: 12px
+    position: relative
+    left: 0
+    top: 0
+    transform: none
+    cursor: pointer
+    border: none
+      radius: 0
+    box-shadow: none
+    span
+      display: none
+  .ui-datepicker-prev
+    background: url("../img/left.svg") no-repeat center
+      size: 100%
+  .ui-datepicker-next
+    background: url("../img/right.svg") no-repeat center
+      size: 100%
+    order: 1
+
+  table
+    margin: 0
+    thead
+      text-transform: uppercase
+      text-align: center
+      color: $accent
+      font-size: 10px
+      font-weight: bold
+    th
+      padding: 0 0 16px
+    td
+      a
+        width: 32px
+        height: 32px
+        vertical-align: middle
+        text-align: center
+        margin: 0
+        background: transparent
+        border: none
+
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+  border: none
+    radius: 50%
+  letter-spacing: 0.22px
+  font-size: 14px
+  font-weight: 500
+  color: #333333
+  margin: 0 auto
+  width: 32px
+  height: 32px
+  background: transparent
+  padding: 0
+  vertical-align: middle
+  text-align: center
+  display: flex
+  align-items: center
+  justify-content: center
+
+.ui-widget-content .ui-state-active
+  background: $accent
+  color: #fff
+
+

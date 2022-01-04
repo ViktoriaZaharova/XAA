@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
 .modal-backdrop {
   background: rgba(29, 42, 61, 0.61); }
 
@@ -24,8 +25,14 @@
     margin-top: 0; }
   .modal-content .form input {
     padding: 0 0 17px; }
+  .modal-content .form .label-textarea {
+    width: 100%; }
   .modal-content .form-group:last-child {
     margin: 0; }
+  .modal-content .btn-close-modal {
+    margin: 40px auto 0;
+    max-width: 329px;
+    width: 100%; }
 
 .modal-dialog {
   max-width: 777px; }
@@ -85,3 +92,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+.subtitle-modal {
+  width: 100%; }

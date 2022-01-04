@@ -124,13 +124,34 @@ $('.recommended-articles-slider').slick({
     ]
 });
 
+$('.before-after-work-slider').slick({
+    slidesToShow: 3,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+
+    ]
+});
+
 // show list all
 $('.btn-load').on('click', function (e) {
     e.preventDefault();
     $('.examples-operation-col:hidden').slice(0, 4).slideDown();
 
     var onBlock = $('.examples-operation-col:hidden').length;
-    if(onBlock <= 0) {
+    if (onBlock <= 0) {
         $('.btn-load').hide();
     }
 });
@@ -172,3 +193,6 @@ $('.btn-hidden-reviews').on('click', function (e) {
     $('.reviews-home-wrapper').slideUp();
     $('.btn-add-reviews').css('display', 'flex');
 });
+
+
+$('[name="phone"]').mask('+7(999) 999-99-99');
