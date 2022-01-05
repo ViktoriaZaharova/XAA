@@ -1,0 +1,381 @@
+@import "fonts"
+@import "vars"
+
+.service-page
+  h1
+    color: $accent
+    font-weight: bold
+    font-size: 35px
+    font-family: $default-font
+    margin: 0 0 14px
+    line-height: normal
+
+  .category-page__img
+    width: 100%
+
+  .price
+    font-size: 30px
+    font-weight: bold
+    margin: 12px 0 34px
+
+    span
+      font-size: 21px
+
+  .btn-group
+    width: 100%
+    justify-content: space-between
+
+    .btn
+      margin: 0
+      max-width: none
+      width: calc(50% - 5px)
+      flex: none
+  &__content
+    margin: 0 0 49px
+
+.prices
+  h2
+    color: #000000
+    margin: 0 0 23px
+
+
+.table
+  width: 100%
+  margin: 45px 0 0
+  font-size: 16px
+  padding: 15px 0 0
+  box-shadow: 0px 8px 60px rgba(217, 234, 239, 0.9)
+  border-radius: 10px
+  background: #fff
+  .btn
+    max-width: 180px
+    width: 100%
+    margin: 0 0 0 auto
+
+.tr
+  width: 100%
+  padding: 0 49px 0 100px
+  display: flex
+  align-items: stretch
+  &:nth-child(even)
+    background: #F4F4F4
+  .btn
+    height: 41px
+
+.td
+  width: 58%
+  border-right: 1px solid #D8D8D8
+  padding: 7px 0
+  display: flex
+  align-items: center
+  &:nth-child(2)
+    width: 22%
+    display: flex
+    align-items: center
+    justify-content: center
+
+  &:last-child
+    border: none
+    width: 20%
+
+.price-value
+  text-align: center
+  font-size: 21px
+  font-weight: bold
+  margin: auto
+
+.price-name
+  max-width: 462px
+  width: 100%
+  line-height: normal
+
+.menu-service
+  font-size: 15px
+  line-height: 30px
+  font-weight: bold
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 7px 54px
+  width: 100%
+  background: $accent
+  margin: 0 0 40px
+
+  li
+    a
+      color: #fff
+
+      &:hover
+        color: #000
+
+
+.sidebar
+  box-shadow: 0px 8px 60px rgba(217, 234, 239, 0.9)
+  border-radius: 10px
+  background: #fff
+  padding: 22px 34px 35px 34px
+
+  h4
+    width: 100%
+    padding: 0 0 13px
+    border-bottom: 1px solid #1AB9CA
+    font-size: 21px
+    font-weight: bold
+    margin: 0 0 23px
+
+.menu-sidebar
+  font-size: 15px
+
+  li
+    margin: 0 0 19px
+
+    &:last-child
+      margin: 0
+
+    a
+      color: #373737
+      display: flex
+      align-items: center
+      justify-content: flex-start
+
+      &:hover
+        font-weight: bold
+
+        &:before
+          content: ''
+          display: flex
+          align-items: center
+          justify-content: center
+          width: 16px
+          min-width: 16px
+          height: 16px
+          margin: 0 16px 0 0
+          background: url("../img/arrow-right2.svg") no-repeat center
+            size: 100%
+
+    .active
+      font-weight: bold
+
+      &:before
+        content: ''
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 16px
+        min-width: 16px
+        height: 16px
+        margin: 0 16px 0 0
+        background: url("../img/arrow-right2.svg") no-repeat center
+          size: 100%
+
+.sales-block
+  width: 100%
+  margin: 36px 0 0
+  box-shadow: 0px 8px 60px rgba(217, 234, 239, 0.9)
+  border-radius: 10px
+  background: #fff
+
+  &__img
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    border-radius: 10px
+
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  &__body
+    width: 100%
+    padding: 25px 30px
+
+  &__title
+    color: #000
+    font-size: 21px
+    font-weight: bold
+    margin: 0 0 5px
+    width: 100%
+
+    &:hover
+      color: $accent
+
+  .links-details
+    margin: 25px 0 0
+
+.service-text
+  margin: 0 0 45px
+
+  h4
+    margin: 0 0 11px
+    font-size: 21px
+    font-weight: bold
+
+  .btn-all
+    margin: 18px 0 0
+
+.list-decimal
+  list-style: decimal
+  padding: 0 0 0 20px
+
+.attention-box
+  margin: 25px 0
+  background: $accent
+  color: #fff
+  padding: 30px 47px 38px 34px
+
+  h4
+    font-size: 21px
+    font-weight: bold
+    margin: 0 0 12px
+
+
+.service-section
+  margin: 0 0 160px
+
+  .statistics-wrapper
+    margin: 0
+
+  .statistics-box
+    padding: 0
+    margin: 0 0 30px
+
+    .box-text
+      line-height: 21px
+
+    &__num
+      font-size: 30px
+      line-height: 36px
+
+  .btn-all
+    width: 100%
+    max-width: 180px
+
+    .svg-icon
+      min-width: 14px
+      width: 14px
+      height: 14px
+      fill: $accent
+      margin: 0 0 0 15px
+      transform: rotate(0)
+    &:hover
+      .svg-icon
+        fill: #fff
+  .in
+    .btn-all
+      .svg-icon
+        transform: rotate(180deg)
+
+
+.block_hidden
+  width: 100%
+  display: none
+
+
+.quote-box
+  margin: 45px 0 60px
+  position: relative
+  font-size: 15px
+  font-weight: bold
+  line-height: 30px
+  text-align: center
+  padding: 0 100px
+  &:before, &:after
+    content: ''
+    position: absolute
+    width: 31px
+    height: 26px
+    display: flex
+    align-items: center
+    justify-content: center
+
+  &:before
+    left: 50px
+    top: -15px
+    background: url("../img/quote.svg") no-repeat center
+      size: 100%
+
+  &:after
+    right: 60px
+    bottom: -15px
+    background: url("../img/quote2.svg") no-repeat center
+      size: 100%
+
+  .box-text
+    margin: 0 auto
+    max-width: 580px
+    width: 100%
+
+.video-box
+  width: 100%
+  height: 438px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 33px
+
+  iframe
+    width: 100%
+    height: 100%
+
+//advantages-service
+.advantages-service-box
+  width: 100%
+  height: 100%
+  border: 1px solid #ECE9F1
+    radius: 10px
+  background: #fff
+  padding: 34px 39px 28px 37px
+
+  h4
+    position: relative
+    margin: 0 0 6px
+    padding: 0 0 11px
+
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      background: $accent
+      width: 77px
+      height: 2px
+
+.advantages-service-box.bg-accent
+  border: none
+
+  .box-text
+    color: #000
+
+  h4
+    &:before
+      background: #fff
+
+.portfolio-service-slider, .details-info-slider
+  margin: 33px 0 0
+
+  .slick-arrow
+    top: 50%
+    transform: translate(0, -50%)
+    z-index: 1
+    opacity: 1
+    position: absolute
+
+  .slick-prev
+    left: 6px
+
+  .slick-next
+    right: 6px
+
+  .slick-slide
+    padding: 0 10px
+
+  .slick-list
+    margin: 0 -10px
+
+.details-info-box
+  width: 100%
+  height: 250px
+  background: #C4C4C4

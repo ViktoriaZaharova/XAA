@@ -145,6 +145,36 @@ $('.before-after-work-slider').slick({
     ]
 });
 
+$('.portfolio-service-slider').slick({
+    slidesToShow: 2,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+
+    ]
+});
+
+$('.details-info-slider').slick({
+    slidesToShow: 2,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+
+    ]
+});
+
 // show list all
 $('.btn-load').on('click', function (e) {
     e.preventDefault();
@@ -196,3 +226,27 @@ $('.btn-hidden-reviews').on('click', function (e) {
 
 
 $('[name="phone"]').mask('+7(999) 999-99-99');
+
+$(document).ready(function($){
+    $('.btn-all').on('click', function (e) {
+        e.preventDefault();
+        $(this).parents('.service-text').toggleClass('in').find('.block_hidden').slideToggle();
+
+        var $this = $(this);
+
+        if(!$this.parents('.service-text').hasClass('in')){
+            $this.parents('.service-text').removeClass('in');
+            $this.find('.btn-text').html('Показать');
+
+        } else {
+            $this.parents('.service-text').addClass('in');
+            $this.find('.btn-text').html('Скрыть');
+        }
+    });
+
+    if($('.service-text').hasClass('in')) {
+        $(this).find('.block_hidden').fadeIn();
+        // $this.html('Показать');
+
+    }
+});

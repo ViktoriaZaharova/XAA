@@ -8,6 +8,12 @@
     right: 20px
     bottom: 300px
 
+  .quote-box
+    margin: 25px 0
+
+  .tr
+    padding: 0 20px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
   .footer-box
@@ -137,6 +143,13 @@
       font-size: 30px
     .btn
       margin: 20px 0 0
+
+  .td
+    width: 50%
+    &:nth-child(2)
+      width: 25%
+    &:last-child
+      width: 25%
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 890px)
@@ -492,6 +505,49 @@
   .reviews2
     margin: 58px 0 46px
 
+  .quote-box
+    padding: 0 56px
+    &:before
+      left: 0
+    &:after
+      right: 0
+    .box-text
+      max-width: none
+
+  .video-box
+    height: 300px
+
+  .table
+    margin: 48px -15px 0
+    width: calc(100% + 30px)
+
+  .tr
+    flex-wrap: wrap
+    padding: 27px 15px
+
+
+  .td
+    border: none
+    padding: 0
+    &:last-child
+      max-width: 180px
+      width: 100%
+    &:nth-child(2)
+      width: calc(100% - 180px)
+      text-align: left
+    &:first-child
+      width: 100%
+      margin: 0 0 16px
+
+  .price-value
+    margin: 0 auto 0 0
+
+  .prices
+    margin: 53px 0 0
+
+  .certification2
+    padding: 44px 0 58px
+
 @media only screen and (max-width: 576px)
   .footer-menu
     column-count: 2
@@ -652,6 +708,53 @@
       width: 36px
       height: 36px
       padding: 10px 15px
+
+  .service-page
+    h1
+      margin: 0 0 9px
+    .price
+      margin: 18px 0 36px
+    .btn-group
+      .btn
+        width: 100%
+        margin: 0 0 11px
+        &:last-child
+          margin: 0
+
+  .service-section
+    .statistics-box
+      width: 100%
+    .btn-all
+      margin: 30px auto 0
+
+  .attention-box
+    padding: 30px 20px 45px 24px
+
+  .mb-50
+    margin-bottom: 40px
+
+  .video-box
+    height: 184px
+
+  .mt-25
+    margin-top: 12px
+
+  .advantages-service-box
+    padding: 34px 22px 40px 29px
+
+  .service-section
+    margin: 0
+
+  .portfolio-service-slider .slick-arrow, .details-info-slider .slick-arrow
+    width: 36px
+    height: 36px
+    padding: 10px 14px
+
+  .portfolio-service-slider .slick-prev, .details-info-slider .slick-prev
+    left: 0
+
+  .portfolio-service-slider .slick-next, .details-info-slider .slick-next
+    right: 0
 
 @media only screen and (max-width: 480px)
   .about-doctor

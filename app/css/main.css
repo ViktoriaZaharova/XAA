@@ -300,8 +300,14 @@ h3 {
 .mb-35 {
   margin-bottom: 35px; }
 
+.mb-50 {
+  margin-bottom: 50px; }
+
 .mb-24 {
   margin-bottom: 24px; }
+
+.mt-25 {
+  margin-top: 25px; }
 
 .p-90 {
   padding: 90px 0; }
@@ -814,6 +820,8 @@ header.fixed .menu {
     padding: 0 0 8px;
     line-height: 55px;
     position: relative; }
+    .statistics-box__num span {
+      font-size: 21px; }
     .statistics-box__num:before {
       content: '';
       position: absolute;
@@ -1756,12 +1764,19 @@ footer {
   .popular-services2 .box-text {
     margin: 0 0 50px; }
 
+.dropdown-menu {
+  width: 100%; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   .btn-scroll-top {
     right: 20px;
-    bottom: 300px; } }
+    bottom: 300px; }
+  .quote-box {
+    margin: 25px 0; }
+  .tr {
+    padding: 0 20px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -1864,7 +1879,13 @@ footer {
   .category-page-wrapper h1 {
     font-size: 30px; }
   .category-page-wrapper .btn {
-    margin: 20px 0 0; } }
+    margin: 20px 0 0; }
+  .td {
+    width: 50%; }
+    .td:nth-child(2) {
+      width: 25%; }
+    .td:last-child {
+      width: 25%; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 890px) {
@@ -2185,7 +2206,42 @@ footer {
   .before-after-work-box {
     height: 251px; }
   .reviews2 {
-    margin: 58px 0 46px; } }
+    margin: 58px 0 46px; }
+  .quote-box {
+    padding: 0 56px; }
+    .quote-box:before {
+      left: 0; }
+    .quote-box:after {
+      right: 0; }
+    .quote-box .box-text {
+      max-width: none; }
+  .video-box {
+    height: 300px; }
+  .table {
+    margin: 48px -15px 0;
+    width: calc(100% + 30px); }
+  .tr {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 27px 15px; }
+  .td {
+    border: none;
+    padding: 0; }
+    .td:last-child {
+      max-width: 180px;
+      width: 100%; }
+    .td:nth-child(2) {
+      width: calc(100% - 180px);
+      text-align: left; }
+    .td:first-child {
+      width: 100%;
+      margin: 0 0 16px; }
+  .price-value {
+    margin: 0 auto 0 0; }
+  .prices {
+    margin: 53px 0 0; }
+  .certification2 {
+    padding: 44px 0 58px; } }
 
 @media only screen and (max-width: 576px) {
   .footer-menu {
@@ -2318,7 +2374,40 @@ footer {
   .before-after-work-slider .slick-arrow {
     width: 36px;
     height: 36px;
-    padding: 10px 15px; } }
+    padding: 10px 15px; }
+  .service-page h1 {
+    margin: 0 0 9px; }
+  .service-page .price {
+    margin: 18px 0 36px; }
+  .service-page .btn-group .btn {
+    width: 100%;
+    margin: 0 0 11px; }
+    .service-page .btn-group .btn:last-child {
+      margin: 0; }
+  .service-section .statistics-box {
+    width: 100%; }
+  .service-section .btn-all {
+    margin: 30px auto 0; }
+  .attention-box {
+    padding: 30px 20px 45px 24px; }
+  .mb-50 {
+    margin-bottom: 40px; }
+  .video-box {
+    height: 184px; }
+  .mt-25 {
+    margin-top: 12px; }
+  .advantages-service-box {
+    padding: 34px 22px 40px 29px; }
+  .service-section {
+    margin: 0; }
+  .portfolio-service-slider .slick-arrow, .details-info-slider .slick-arrow {
+    width: 36px;
+    height: 36px;
+    padding: 10px 14px; }
+  .portfolio-service-slider .slick-prev, .details-info-slider .slick-prev {
+    left: 0; }
+  .portfolio-service-slider .slick-next, .details-info-slider .slick-next {
+    right: 0; } }
 
 @media only screen and (max-width: 480px) {
   .about-doctor .nav-tabs .nav-item {
