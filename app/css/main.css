@@ -1858,7 +1858,13 @@ footer {
     margin: 21px 0 45px; }
   .promo-box {
     max-width: none;
-    padding: 33px 32px 30px; } }
+    padding: 33px 32px 30px; }
+  .category-page__content {
+    padding: 30px; }
+  .category-page-wrapper h1 {
+    font-size: 30px; }
+  .category-page-wrapper .btn {
+    margin: 20px 0 0; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 890px) {
@@ -2167,9 +2173,20 @@ footer {
     .popular-services2 .box-text {
       max-width: none; }
   .modal-dialog {
-    max-width: 450px; } }
+    max-width: 450px; }
+  .category .appointment2 {
+    padding: 30px; }
+  .category .appointment-body {
+    padding: 0 0 0 30px; }
+  .before-after-work {
+    margin: 40px 0 60px; }
+    .before-after-work h2 {
+      margin: 0 auto 20px; }
+  .before-after-work-box {
+    height: 251px; }
+  .reviews2 {
+    margin: 58px 0 46px; } }
 
-/* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
   .footer-menu {
     -webkit-column-count: 2;
@@ -2276,7 +2293,32 @@ footer {
     right: 20px;
     top: 20px; }
     .close .svg-icon {
-      fill: #727272; } }
+      fill: #727272; }
+  .category-page__content, .category-page__img {
+    width: 100%; }
+  .category-page__content {
+    padding: 21px 37px 36px 25px; }
+    .category-page__content .btn {
+      display: none; }
+  .category-page-wrapper h1 {
+    margin: 0 0 15px; }
+  .category-box {
+    height: 201px;
+    padding: 18px 21px 16px 21px; }
+  .category .appointment2 {
+    padding: 50px 24px 53px 27px;
+    margin: 28px 0 35px; }
+    .category .appointment2 h3 {
+      margin: 0 0 16px; }
+    .category .appointment2 .btn {
+      margin: 38px 0 0; }
+  .category .appointment-body {
+    padding: 0;
+    width: 100%; }
+  .before-after-work-slider .slick-arrow {
+    width: 36px;
+    height: 36px;
+    padding: 10px 15px; } }
 
 @media only screen and (max-width: 480px) {
   .about-doctor .nav-tabs .nav-item {
@@ -2295,7 +2337,6 @@ footer {
   .form-group {
     margin: 0; } }
 
-/* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {
   .footer-box .mail {
     width: 100%; } }

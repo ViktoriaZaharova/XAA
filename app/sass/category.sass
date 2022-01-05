@@ -3,6 +3,7 @@
 
 .before-after-work
   margin: 52px 0 71px
+
   h2
     text-align: center
     margin: 0 auto 60px
@@ -10,14 +11,18 @@
 .before-after-work-slider
   .slick-list
     margin: 0 -10px
+
   .slick-slide
     padding: 0 10px
+
   .slick-arrow
     position: absolute
     top: 50%
-    transform: translate(0,-50%)
+    transform: translate(0, -50%)
+
   .slick-prev
     left: 0
+
   .slick-next
     right: 0
 
@@ -28,9 +33,11 @@
   margin: 0 auto
   display: flex
   align-items: stretch
+
   &__before
     width: 50%
     background: #C4C4C4
+
   &__after
     width: 50%
     background: #AB9191
@@ -48,19 +55,23 @@
   .appointment2
     padding: 25px 80px
     margin: 47px auto 70px
+
     h3
       margin: 0 0 22px
 
     .box-text
       max-width: 465px
       width: 100%
+
     .btn
       max-width: 280px
       width: 100%
       margin: 30px 0 0
+
   .appointment-body
     padding: 0 0 0 101px
     width: calc(100% - 219px)
+
   .appointment-icon
     max-width: 219px
     padding: 27px 15px 10px 27px
@@ -77,6 +88,7 @@
   color: #fff
   background: #1AB9CA
   z-index: 1
+
   &__title
     display: flex
     align-items: center
@@ -85,8 +97,10 @@
     font-weight: bold
     width: 100%
     color: #fff
+
     &:hover
       color: $accent
+
     .svg-icon
       fill: #fff
       width: 11px
@@ -95,15 +109,17 @@
       display: flex
       align-items: center
       justify-content: center
+
   &__img
     position: absolute
     left: 50%
     top: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
     width: 100%
     height: 100%
     object-fit: cover
     z-index: -1
+
   &:after
     content: ''
     position: absolute
@@ -113,6 +129,7 @@
     height: 100%
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
     z-index: -1
+
   &__description
     margin: auto 0 0
     font-size: 13px
@@ -139,6 +156,7 @@
   color: #fff
   background: linear-gradient(90.55deg, #0CBACD 15.28%, #08DBBA 110.69%)
   border-color: transparent
+
   .btn-delete-filter
     display: flex
 
@@ -157,6 +175,7 @@
   display: flex
   align-items: stretch
   flex-wrap: wrap
+
   h1
     color: #fff
     font-size: 35px
@@ -165,10 +184,12 @@
     font-weight: bold
     line-height: normal
     text-transform: none
+
   .btn
     margin: 35px 0 0
     max-width: 282px
     width: 100%
+
   .box-text
     max-width: 383px
 
@@ -185,7 +206,31 @@
   justify-content: center
   overflow: hidden
   width: 50%
+
   img
     width: 100%
     height: 100%
     object-fit: cover
+
+
+.dropdown-filter
+  margin: 23px 0 26px
+  width: 100%
+  .btn
+    width: 100%
+    max-width: none
+
+.dropdown-toggle
+  display: flex
+  align-items: center
+  .svg-icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 14px
+    height: 6px
+    min-width: 14px
+    fill: #fff
+    margin: 0 0 0 13px
+  &:after
+    display: none

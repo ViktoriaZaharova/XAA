@@ -330,8 +330,6 @@
   <!--  header-->
   <div class="overlay-menu"></div>
 
-
-
   <section class="category-page page">
     <div class="container">
       <div class="row">
@@ -363,11 +361,31 @@
     </div>
   </section>
 
-
   <section class="category">
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 d-flex d-sm-none">
+          <div class="dropdown dropdown-filter">
+            <a href="#" class="btn btn-accent dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Услуги
+              <svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Вся хирургия</a>
+              <a class="dropdown-item" href="#">Лицо</a>
+              <a class="dropdown-item" href="#">Тело</a>
+              <a class="dropdown-item" href="#">Грудь</a>
+              <a class="dropdown-item" href="#">Нос</a>
+              <a class="dropdown-item" href="#">Тело</a>
+              <a class="dropdown-item" href="#">Лицо</a>
+              <a class="dropdown-item" href="#">Тело</a>
+              <a class="dropdown-item" href="#">Грудь</a>
+              <a class="dropdown-item" href="#">Тело</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 d-none d-sm-block">
           <div class="filter-wrapper">
             <div class="row">
               <div class="col-12 col-md-6 col-lg-2">
@@ -675,7 +693,7 @@
     </div>
   </section>
 
-  <section class="reviews bg-decor">
+  <section class="reviews reviews2 bg-decor">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
