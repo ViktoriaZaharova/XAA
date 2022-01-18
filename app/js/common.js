@@ -226,6 +226,8 @@ $('.btn-hidden-reviews').on('click', function (e) {
 
 
 $('[name="phone"]').mask('+7(999) 999-99-99');
+$('[name="datepicker"]').mask('99.99.9999');
+
 
 $(document).ready(function($){
     $('.btn-all').on('click', function (e) {
